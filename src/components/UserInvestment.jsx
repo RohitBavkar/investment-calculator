@@ -24,7 +24,7 @@ function UserInvestment({ onChange, userInputs }) {
 
       <div className="input-group">
         <p>
-          <label>Expected Return Anually</label>
+          <label>Annual Return %</label>
           <input
             type="number"
             value={userInputs.expectedReturn}
