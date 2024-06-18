@@ -10,11 +10,12 @@ function App() {
     duration: 10,
   });
 
+  const isInputValid = userInputs.duration > 0;
   function handleUserInputs(field, value) {
     setUserInputs((prev) => {
       return {
         ...prev,
-        [field]: value,
+        [field]: parseInt(value),
       };
     });
   }
@@ -23,7 +24,10 @@ function App() {
     <>
       <Header />
       <UserInvestment userInputs={userInputs} onChange={handleUserInputs} />
-      <CalculateInvestment userInputs={userInputs} />
+      {!isInputValid && (
+        <p className="center">Please enter duration greater that 0.</p>
+      )}
+      {isInputValid && <CalculateInvestment userInputs={userInputs} />}
     </>
   );
 }

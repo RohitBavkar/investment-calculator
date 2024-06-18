@@ -28,7 +28,7 @@ function UserInvestment({ onChange, userInputs }) {
           <input
             type="number"
             value={userInputs.expectedReturn}
-            onChange={(e) => onChange("expectedReturn", e.target.valu)}
+            onChange={(e) => onChange("expectedReturn", e.target.value)}
             required
           />
         </p>
