@@ -1,2 +1,2 @@
-# Investment Calculator - A Recat Practice project
+# Investment Calculator
 https://rohitbavkar.github.io/investment-calculator/
